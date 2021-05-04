@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LEO SIGN UP </title>
+
+<script type="text/javascript">
+function abc()
+{
+    var m=document.getElementById("mail").value;
+    var u=document.getElementById("user").value;
+    var p=document.getElementById("pass").value;
+    var cp=document.getElementById("cpass").value;
+    var cn=document.getElementById("number").value;
+     
+     
+     if( m.length==0 || u.length==0 || p.length==0 || cp.length==0 || cn.length==0 )
+     {
+     
+        window.alert("KINDLY ENTER ALL THE REQUIRED DETAILS");
+     }
+     
+     else
+     {
+     
+     if(p!=cp)
+     
+     {
+     window.alert("..YOUR PASSWORDS ARE NOT MATCHED ..");
+         window.open("signup.html");
+     }
+
+     else
+     {
+     window.alert("..YOUR FITNESS ACCOUNT HAS BEEN CREATED SUCCESSFULLY !!!..");
+     }
+     
+     }
+     
+        
+    
+    }
+</script>
+<style>
+body
+{
+background-image:url("signupwallpaper.jpg");
+background-size:cover;
+background-repeat:no-repeat;
+background-position:center;
+}
+
+
+
+
+
+    div {
+        margin-left: 75px;
+        font-family: myFirstFont;
+        letter-spacing: 3.5px;
+        width: 30%;
+        height: 100%;
+        background: black;
+        padding: 10px;
+        position: relative;
+        top: 5px;
+        left: 75px;
+        opacity: 0.6;
+        filter: alpha(opacity=60);
+    }
+@font-face
+    {
+        font-family: myFirstFont;
+        src: url(gunplay.ttf)
+    }
+h1
+{
+font-family:myFirstFont;
+color:white;
+float: right;
+font-size:135px;
+margin-top: 75px;
+    margin-right: 200px;
+
+
+}
+
+form{
+color : snow;
+margin: 30px;
+text-align :centre;
+}
+.but 
+    {
+        font-family: myFirstFont;
+        font-size: 20px;
+        background:  green;
+        border:none;
+        padding:5px;
+        width:100%;
+     text-align: center;
+    }
+.but:hover
+    {
+            background-color: antiquewhite;
+            color: black;
+    }
+b
+{
+font-size:25px;
+color:snow;
+}
+input[type=text], input[type=password],input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+</style>
+
+</head>
+<body>
+    <h1>JOIN<br /> THE<br /> WORLD!</h1>
+    <br>
+<div>
+  <form name="myForm" method="post">
+   
+   <img src="signupwallpaper2.jpg"  width="5%" >
+   
+   <b style="color:green"> SIGNUP FORM</b><br ><br ><br >
+   <label for="user name">USERNAME:</label><input type="text" placeholder="USER NAME"  name="user" id="user" required="true"><br />
+   
+      <label for="email">E-MAIL:</label><input type="text" placeholder="EMAIL"  name="email" id="mail" required="true"><br />
+  
+  <label for="contact">CONTACT:</label><input type="number" placeholder="CONTACT NUMBER"  name="contact number" id="number" required="true"><br />
+   
+   <p> GENDER :</p><br >
+   <input type="radio" name="gender"value="male" > MALE
+   <input type="radio" name="gender"value="female"> FEMALE<br ><br >
+   <label for="pass">PASSWORD:</label><input type="password" name="" value="" placeholder="PASSWORD" name="pass" id="pass" required="true">
+   <label for="pass">CONFIRM PASSWORD:</label><input type="password" name="" value=""placeholder="CONFIRM PASSWORD" name="cpass" id="cpass" required="true"><br>
+   <button type="button"   onclick="abc()"  class="but">CREATE ACCOUNT</button><br ><br>
+   <p>ALREADY HAVE ACCOUNT <a style="color:green" href="projecthtmllogin.html"> LOGIN?</a></p>
+
+
+ 
+ </form>
+ 
+ </div>
+</body>
+</html>

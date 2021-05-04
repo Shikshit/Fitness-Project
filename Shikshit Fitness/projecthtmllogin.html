@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SOCIAL NETWORKING WEBSITE</title>
+
+    
+    <script type="text/javascript">
+    function abc()
+        {
+            var m=document.getElementById("mail").value;
+            var p=document.getElementById("pass").value;
+            var dm="ayeshaferozahmad8@gmail.com";
+            var dp="8311";
+            if(dm==m && p==dp)
+                {
+                    window.alert("WELCOME TO LEO..");
+                    window.open("1code.html");
+                }
+            else{
+                window.alert("..PLEASE KINDLY CHECK YOUR USERNAME AND PASSWORD....");
+            }
+        }
+    </script>
+    <style>
+
+body{
+background-color:black;
+
+ background-image : url("signupwallpaper.jpg");
+ 
+ background-size:cover;
+
+
+}
+
+#fp
+    {
+        font-size: 20px;
+        color:#7D3C98;
+    }
+
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+        div:not(#contact) {
+            margin-left: 75px;
+            margin-top: 75px;
+            font-family: myFirstFont;
+            letter-spacing: 3px;
+            width: 30%;
+            height: 450px;
+            background: black;
+            padding: 10px;
+            position: relative;
+            top: 5px;
+            left: 75px;
+            opacity: 0.6;
+            filter: alpha(opacity=60);
+        }
+@font-face
+    {
+        font-family: myFirstFont;
+        src: url(gunplay.ttf)
+    }
+h1
+{
+font-family:myFirstFont;
+color:whitesmoke;
+float: right;
+font-size:135px;
+margin-top: 75px;
+    margin-right: 200px;
+
+
+}
+
+form{
+color : snow;
+margin: 30px;
+text-align :left
+}
+.but 
+    {
+        font-family: myFirstFont;
+        font-size: 20px;
+        background:  green;
+        border:none;
+        padding:5px;
+        width:100%;
+        text-align: center;
+    }
+.but:hover
+    {
+            background-color: antiquewhite;
+            color: black;
+    }
+b
+{
+font-size:25px;
+color:snow;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+marquee{
+font-family:"Comic Sans MS";
+font-size:18px;
+color :black;
+bottom:80px;
+}
+
+img
+{
+display:block;
+margin:- 100px auto  0 auto;
+}
+#contact
+{
+        width:100%;
+        font-family:"arial";
+        height:125px;
+        background: black;
+        color:gray;
+        font-size: 20px;
+        padding-top:5px;
+        position: relative;
+        background-size: cover;
+}
+
+</style>
+</head>
+<body>
+    <h1>MEET<br /> THE<br /> WORLD!</h1>
+<div>
+  <form name="myForm" method="post">
+   
+   <img src="signupwallpaper2.jpg"  width="5%" >
+   
+   <b style="color:green">LOGIN FORM </b><br ><br >
+   
+      <label for="email">USERNAME:</label><input type="text" placeholder="EMAIL" id="mail"  name="email" required><br />
+   
+   <label for="pass">PASSWORD:</label><input type="password" name="" value="" placeholder="PASSWORD" id="pass" name="pass" required><br>
+   
+   <br > <a href="index.html"><button style="background-color:green" type="button" onclick="abc()" class="but">LOGIN</button></a><br /><br />
+    <a href="signup.html"><button style="backround-color:green" type="button" class="but">SIGN UP</button></a><br /><br>
+
+    <a style="color:green" href="forgotpassword.html" id="fp">FORGOT PASSWORD?</a>
+
+</form>
+ 
+ </div><br >
+
+<br ><br ><br ><br ><br ><br ><br ><br ><marquee> *** DEVELOPED BY SHIKSHIT GUPTA *** </marquee>
+<div id="contact">
+<a href="portfolio.html" style="color:grey;float:right;font-size:35px">portfolio</a>
+<p><u>CONTACT US</u></p>
+</p>Lovely Professional University<br />Phagwara,144411</p>
+</div>
+
+
+
+</body>
+
+</html>
